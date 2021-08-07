@@ -1,0 +1,146 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 0px 0px 0px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    width: 71px;
+    height: 21px;
+}
+.social__item--fb {
+    width: 11px;
+    height: 21px;
+    margin-right: 35px;
+}
+.social__item--tw {
+    width: 20px;
+    height: 16px;
+}
+.social__link {
+    fill:#ffffff;
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55) 0s;
+    width: 100%;
+    height: 100%;
+}
+.social__link:hover {
+    fill: #35e1ff;
+    transform: scale(2);
+}
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.btn-reset {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.burger {
+    width: 48px;
+    height: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+.burger:hover .burger__line {
+    background-color: #e8594e;
+}
+.burger__line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+.burger__line:last-child {
+    bottom: 0;
+    top: auto;
+}
+
+
+
+
+.menu {
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background: var(--neptune-color);
+    color: #fff;
+    transition: left 0.5s ease;
+}
+.menu--visible {
+    left: 0;
+    transition: left 0.5s ease;
+}
+.menu__nav {
+    width: 100%;
+    height: 100%;
+}
+.menu__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding: 30px 0px;
+    overflow-y: auto;
+}
+.menu__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    transition: color 0.25s ease;
+}
+.menu__link:hover {
+    color: #1c2e3d;
+}
+.menu__close {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: background 0.25s ease;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.menu__close:hover .menu__close-line{
+    background: #1c2e3d;
+}
+.menu__close-line {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: background 0.25s ease;
+}
+.menu__close-line:first-child {
+    transform: rotate(45deg);
+}
+.menu__close-line:last-child {
+    transform: rotate(-45deg);
+}

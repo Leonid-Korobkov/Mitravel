@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Mitravel</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+</head>
+
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="fb" viewBox="0 0 11 20">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 0H8C5.23858 0 3 2.23858 3 5V8H0V12H3V20H7V12H10L11 8H7V5C7 4.44772 7.44772 4 8 4H11V0Z" />
+            </g>
+        </symbol>
+        <symbol id="tw" viewBox="0 0 20 17">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 0.00932958C19.1294 0.6234 18.1656 1.09307 17.1455 1.40024C16.024 0.110728 14.2167 -0.341476 12.6201 0.267924C11.0234 0.877323 9.97709 2.41869 10 4.12751V5.0366C6.75515 5.12074 3.68366 3.57476 1.81818 0.91842C1.81818 0.91842 -1.81818 9.10024 6.36364 12.7366C4.49139 14.0075 2.26105 14.6447 0 14.5548C8.18182 19.1002 18.1818 14.5548 18.1818 4.10024C18.181 3.84701 18.1566 3.59442 18.1091 3.34569C19.0369 2.43069 19.6917 1.27543 20 0.00932958Z" />
+            </g>
+        </symbol>
+    </svg>
+
+    <div class="site-container">
+        <div class="menu">
+            <button class="menu__close btn-reset" aria-label="close menu">
+                <span class="menu__close-line"></span>
+                <span class="menu__close-line"></span>
+            </button>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Become A Travel</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Featured Stories</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Featured Videos</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Newsletter</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Inspirations</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class=" header-container flex">
+                    <div class="header__social social animate__animated animate__backInLeft">
+                        <a href="#" class="social__item social__item--fb" aria-label="Go to Facebook" target="_blank">
+                            <svg class="social__link social__link--fb">
+                                <use xlink:href="#fb"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item social__item--tw" aria-label="Go to Twitter" target="_blank">
+                            <svg class="social__link social__link--tw">
+                                <use xlink:href="#tw"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#" class="header__logo logo animate__animated animate__bounce">Mitravel</a>
+                    <button class="header_burger burger btn-reset animate__animated animate__backInRight" aria-label="Open menu">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+
+        <section class="first">
+                <div class="container first__container">
+                    <a href="#" class="first__link">New book</a>
+                    <h1 class="first__tittle">
+                        Mother Earth Hosts Our Travels
+                    </h1>
+                    <p class="first_descr">There are not many cities that have experienced such social and political
+                        extremes in recent history as Amsterdam. In the 20th century alone, Amsterdam faced the
+                        atrocities of war for the first time in 400 years, became the radical center of 1960s social
+                        movements and witnessed a complete </p>
+                    <button class="btn first__btn btn-reset" aria-label="Buy the book">Buy the Book</button>
+                </div>
+                <div class="first__bottom">
+                    <form action="/" class="first__form search__form">
+                        <input type="search" class="search-form__field" placeholder="Search stories">
+                        <button type="submit" class="search-form__button btn-reset" aria-label="Search"></button>
+                    </form>
+                    <div class="first__slide main__slider">
+                        <div class="swiper-container">
+                            <button class="first__slider-btn btn-left btn-reset"></button>
+                            <button class="first__slider-btn btn-right btn-reset"></button>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="main-slider__media">
+                                        <img src="img/first/slider-1.jpg" alt="Moutains" class="swiper-img">
+                                    </div>
+                                    <p class="main-slider__text">
+                                        wonderful moutain
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-slider__media">
+                                        <button class="main-slider__play btn-reset"></button>
+										<video src="videos/1.mp4" muted playsinline class="swiper-img video"></video>
+                                    </div>
+                                    <p class="main-slider__text">
+                                        wonderful moutain
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-slider__media">
+                                        <img src="img/first/slider-3.jpg" alt="Moutains" class="swiper-img">
+                                    </div>
+                                    <p class="main-slider__text">
+                                        wonderful moutain
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="become">
+                <div class="container">
+                <h2 class="section-title become-title wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">
+                    Become A Travel Pro In One Easy Lesson
+                </h2>
+                <ul class="become__list">
+                    <li class="become__item">
+                        <img src="img/become/become-1.jpg" alt="Travel image" class="become__image">
+                        <div class="become__text">
+                            Vacation Home<br> Rental Success
+                        </div>
+                    </li>
+                    <li class="become__item">
+                        <img src="img/become/become-2.jpg" alt="Travel image" class="become__image">
+                        <div class="become__text">
+                            Vacation Home<br> Rental Success
+                        </div>
+                    </li>
+                    <li class="become__item">
+                        <img src="img/become/become-3.jpg" alt="Travel image" class="become__image">
+                        <div class="become__text">
+                            Vacation Home<br> Rental Success
+                        </div>
+                    </li>
+                    <li class="become__item">
+                        <img src="img/become/become-4.jpg" alt="Travel image" class="become__image">
+                        <div class="become__text">
+                            Vacation Home<br> Rental Success
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="featured">
+                <div class="container featured__container">
+                    <article class="featured__article blog-article">
+                        <a href="#" class="blog-article__category">Featured</a>
+                        <h3 class="blog-article__title">How To Fly A Private Jet On Your Next Trip</h3>
+                        <p class="blog-article__descr">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
+                        <a class="btn blog-article__btn btn-reset">read article</a>
+                    </article>
+                </div>
+                <div class="featured__stories">
+                    <h2 class="featured__title wow animate__animated animate__fadeInTopRight" data-wow-offset="150">Featured<br> Stories</h2>
+                    <ul class="featured__list featured-list">
+                        <li class="featured-list__item">
+                            <a href="#" class="featured-list__link">
+                                <article class="feature-list__article">
+                                    <div class="feature-list__image">
+                                        <img src="img/featured/Avatar1.png" alt="woman">
+                                    </div>
+                                    <div class="feature-list__text">
+                                        <h4 class="feature-list__title">Do A Sporting Stag Do In Birmingham</h4>
+                                        <time class="feature-list__time" datetime="2019-12-13 00:00">13 Dec 2019</time>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="featured-list__item">
+                            <a href="#" class="featured-list__link">
+                                <article class="feature-list__article">
+                                    <div class="feature-list__image">
+                                        <img src="img/featured/Avatar2.png" alt="woman">
+                                    </div>
+                                    <div class="feature-list__text">
+                                        <h4 class="feature-list__title">From Wetlands To Canals And Dams Amsterdam Is Alive</h4>
+                                        <time class="feature-list__time" datetime="2019-12-13 00:00">13 Dec 2019</time>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="featured-list__item">
+                            <a href="#" class="featured-list__link">
+                                <article class="feature-list__article">
+                                    <div class="feature-list__image">
+                                        <img src="img/featured/Avatar3.png" alt="woman">
+                                    </div>
+                                    <div class="feature-list__text">
+                                        <h4 class="feature-list__title">Stu Unger Rise And Fall Of A Poker Genius</h4>
+                                        <time class="feature-list__time" datetime="2019-12-13 00:00">13 Dec 2019</time>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="featured-list__item">
+                            <a href="#" class="featured-list__link">
+                                <article class="feature-list__article">
+                                    <div class="feature-list__image">
+                                        <img src="img/featured/Avatar4.png" alt="woman">
+                                    </div>
+                                    <div class="feature-list__text">
+                                        <h4 class="feature-list__title">New Ideas For A Low Cost Vacation On Water</h4>
+                                        <time class="feature-list__time" datetime="2019-12-13 00:00">13 Dec 2019</time>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+        
+        <section class="featured-videos">
+            <div class="container featured-videos__container">
+                <h2 class="featured-videos__title section-title section-title--center wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">Featured Videos</h2>
+                <p class="featured-videos__descr wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">The state of Utah in the United States is home to lots of beautiful National
+                    Parks, & Bryce Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
+            </div>
+            <div class="slider-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <button class="btn-reset slide-play"></button>
+                        <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                    </div>
+                    <!-- <div class="swiper-slide slide-4">
+                        <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- <section class="featured-videos">
+                <div class="container featured-videos__container">
+                    <h2 class="section-title featured-videos__title section-title--center">Featured Videos</h2>
+                    <p class="featured-videos__descr">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                        </div>
+                        <div class="swiper-slide slide-4">
+                            <h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+                        </div>
+                    </div>
+                </div>
+        </section> -->
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter__text">
+                        <h2 class="newsletter__title section-title wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">
+                            Sign Up Our Newsletter
+                        </h2>
+                        <p class="newsletter_descr wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent.</p>
+                    </div>
+                    <form action="" class="newsletter__form subscribe-form">
+                        <input type="text" name="name" placeholder="Name" class="subscribe-form__field">
+                        <input type="email" name="email" placeholder="Email" class="subscribe-form__field">
+                        <input type="tel" name="tel" placeholder="Phone Number" class="subscribe-form__field">
+                        <button class="btn btn-reset subscribe-form__btn">Sign Up Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="insp">
+            <div class="container">
+                <h2 class="insp__heading section-title section-title--center wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">Inspirations</h2>
+                <p class="insp__descr wow animate__animated animate__fadeInTopLeft" data-wow-offset="150">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
+                <ul class="grid insp__list">
+                    <li class="insp__item insp__item--big insp__item--1">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">A Guide To Rocky Mountain Vacations</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-4.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-3.jpg" alt="human-2">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-5.jpg" alt="human-3">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--2">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">Traveling To Barcelona</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-1.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-2.jpg" alt="human-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--bigheight insp__item--3">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">Party Jokes Startling But Unnecessary</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-6.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-4.jpg" alt="human-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--bigheight insp__item--4">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category"></a>
+                            <h3 class="insp__title">
+                                <a href="#">Maui By Air The Best Way Around The Island</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-3.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-1.jpg" alt="human-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--bigheight insp__item--5">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">Traveling To Barcelona</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-2.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-5.jpg" alt="human-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--6">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">Traveling To Barcelona</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-3.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-6.jpg" alt="human-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="insp__item insp__item--big insp__item--7">
+                        <div class="insp__text">
+                            <a href="#" class="insp__category">Destination</a>
+                            <h3 class="insp__title">
+                                <a href="#">A Guide To Rocky Mountain Vacations</a>
+                            </h3>
+                            <ul class="insp__people">
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-2.jpg" alt="human-1">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-4.jpg" alt="human-2">
+                                </li>
+                                <li class="insp__people-item">
+                                    <img src="img/insp/avatar-6.jpg" alt="human-3">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container flex">
+                <nav class="footer__column">
+                    <h2 class="footer__title">Company</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Security</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Driver Centre</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__column">
+                    <h2 class="footer__title">Information</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Our Story</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Recipes</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Nutrition</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Resources</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Newsletter</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__column">
+                    <h2 class="footer__title">Information</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Customer service </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Recommend a restaurant</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Signup a restaurant</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Jobs</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms of use</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__column">
+                    <h2 class="footer__title">Subscribe Now</h2>
+                    <form action="#" class="subs-form">
+                        <input type="email" name="email" class="subs-form__field" placeholder="Your email">
+                        <button class="btn-reset btn subs-form__btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container bottom-container flex">
+                    <small class="footer__copy">
+                        © 2019 Mass Impressions. Designed by Tran Mau Tri Tam for Mass Impressions. All rights reserved.
+                    </small>
+                    <ul class="footer__links">
+                        <li class="footer__links-item"><a href="" class="footer__link">Terms of Service</a></li>
+                        <li class="footer__links-item"><a href="" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/inputmask.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
