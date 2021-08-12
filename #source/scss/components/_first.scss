@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     min-height: 600px;
-    background: url(../../img/first/Background.png) center center / cover no-repeat;
+    background: url(../img/first/Background.png) center center / cover no-repeat;
     color: var(--white-color);
 }
 .first__container {
@@ -89,7 +89,7 @@
 .search-form__button {
     width: 18px;
     height: 18px;
-    background: url(../../img/first/search.svg) center center / cover no-repeat;
+    background: url(../img/first/search.svg) center center / cover no-repeat;
     position: absolute;
     right: 62px;
     top: 50%;
@@ -140,11 +140,11 @@
 .btn-right {
 	left: auto;
 	right: 50px;
-	background-image: url("../../img/first/arrow-right.svg");
+	background-image: url("../img/first/arrow-right.svg");
 }
 
 .btn-left {
-	background-image: url("../../img/first/arrow-left.svg");
+	background-image: url("../img/first/arrow-left.svg");
 }
 .main-slider__play {
     position: absolute;
@@ -153,7 +153,7 @@
     width: 34px;
     height: 44px;
     transform: translate(-50%, -50%);
-    background: url(../../img/first/play.svg);
+    background: url(../img/first/play.svg);
     z-index: 50;
 }
 @media screen and (max-width: 1500px) {

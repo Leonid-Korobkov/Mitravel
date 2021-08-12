@@ -1,0 +1,21 @@
+@import "_normalize.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_vendor.scss";
+@import "_global.scss";
+@import "_overall.scss";
+
+/* components imports */
+@import "components/_header.scss";
+@import "components/_first.scss";
+@import "components/_become.scss";
+@import "components/_featured.scss";
+@import "components/_slider.scss";
+@import "components/_newsletter.scss";
+@import "components/_insp.scss";
+@import "components/_footer.scss";
+
+@import "_media.scss";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
